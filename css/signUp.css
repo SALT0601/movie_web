@@ -5,11 +5,15 @@
 }
 
 body {
-    height: 100vh;
+
     background-image: url("../img/bg-img.jpg");
     background-size: cover
     
 };
+.sign-up-page {
+    height: 100vh;
+    position: relative;
+}
 
 
 
@@ -24,13 +28,14 @@ body {
 
 #container {
     max-width: 720px;
+    align-self: center!important;
 }
 #form-box {
     height: 100vh;
     border-radius: 15px;
     align-items: center!important;
     justify-content: center!important;
-
+    align-self: center!important;
 }
 
 .row {
@@ -40,44 +45,116 @@ body {
     margin-left: -15px;
 }
 .user-box-size {
-    display: block;
-    margin: 0 auto;
-    margin: 0;
-    padding: 0;
-    color: white;
-    width: 600px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     align-self: center!important;
   
 
 }
 .user-box {
+    width: 100%;
     position: relative;
-   
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-    width: 550px;
-    height: 550px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    display: block;
+    margin: 0 auto;
     backdrop-filter: blur(20px);
 }
+form {
+    display: block;
+}
 
-input, input[type="text"] {
+input, input[type="text"], select, option {
     width: 100%;
     padding: 0 15px;
-    height: 40px;
+    height: 48px;
     line-height: 48px;
-    background: var(--iq-body-bg);
-    border: 1px solid #404043;
+    background: none;
+    border: 1px solid var(--main-gray);
     margin-bottom: 10px;
     margin-top: 5px;
-
+    color: var(--main-yellow);
 }
+
+input:focus, select:focus {
+    outline: 1px solid var(--main-yellow);;
+}
+option {
+    background-color: var(--main-gray);
+    font-size: 12pt;
+}
+.first-op {
+    color: var(--main-white);
+}
+option:hover {
+    color: var(--main-yellow);
+}
+h1, h3, a {
+    color: var(--main-white);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 30pt;
+    margin: 0;
+    margin-bottom: 15px;
+    color: var(--main-yellow);
+}
+h3 {
+    font-size: 12pt;
+    margin: 0;
+    margin-top: 10px;
+}
+
+a {
+    font-size: 13pt;
+    font-style: italic;
+    text-decoration: underline;
+    color: var(--main-yellow);;
+    margin: 0;
+    margin-top: 5px;
+}
+a:hover {
+    color: var(--main-red);
+    font-weight: bold;
+}
+input::placeholder {
+    color: var(--main-white);
+}
+
+
 label {
     margin-bottom: 20px;
+    text-align: start;
+    color: var(--main-white);
+}
+
+.vertical {
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    padding: 0;
+}
+.btnUp {
+    border-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 21px;
+    margin-top: 5px;
+}
+
+button {
+    text-align: center;
+    width: 85px;
+    height: 40px;
+    background-color: var(--main-yellow);
+    border: none;
+    color: black;
+    font-weight: 600;
+    font-size: 12pt;
+}
+button:hover {
+    background-color: var(--main-red);
+    color: var(--main-white);
 }

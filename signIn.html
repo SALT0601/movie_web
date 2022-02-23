@@ -11,37 +11,44 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/signIn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/colors.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The movies - Sign in</title>
 </head>
 
 <body>
-    <div id="container">
-        <div id="form-box">
-            <div class="user-box-size">
-                <div class="user-box">
-                    <div class="sign-text col-12">
-                        <h1 class="col-12">Sign In</h1>
-                    </div>
-                    <form>
+    <div class="sign-in-page">
+        <div id="container">
+            <div id="form-box" class="row">
+                <div class="user-box-size">
+                    <div class="user-box">
+                        <div class="sign-text col-12">
+                            <h1>Sign In</h1>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="email" placeholder="Enter E-mail" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="password" placeholder="Password" required>
+                                </div>
+                                <div class="btnIn col-12">
+                                    <button>SIGN IN</button>
+                                </div>
+                            </div>
+
+                        </form>
                         <div>
-                            <input type="email" placeholder="Enter Email">
+                            <h3>Don't you have an Account?</h3>
+                            <a>Sign Up</a>
                         </div>
-                        <div>
-                            <input type="password" placeholder="Password">
-                        </div>
-                        <div class="btnIn">
-                            <button>SIGN IN</button>
-                        </div>
-                    </form>
-                    <div>
-                        <h3>Don't you have an Account?</h3>
-                        <a>Sign up</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

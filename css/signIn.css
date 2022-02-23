@@ -1,107 +1,149 @@
-
 * {
     font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
 }
+
 body {
+    
     background-image: url("../img/bg-img.jpg");
     background-size: cover
+    
 };
+.sign-in-page {
+
+    height: 100vh;
+    position: relative;
+}
+
+
+
 #container {
-    width: 100%;
+    width: 400px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 
-    opacity: 80%;
+}
 
+#container {
+
+    align-self: center!important;
 }
 #form-box {
-    display: flex;
     height: 100vh;
     border-radius: 15px;
     align-items: center!important;
     justify-content: center!important;
-  
- 
+    align-self: center!important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 .user-box-size {
-    margin: 0;
-    padding: 0;
-    color: white;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-self: center!important;
   
 
 }
 .user-box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    display: block;
+    margin: 0 auto;
     backdrop-filter: blur(20px);
+
 }
-.sign-text h1 {
+form {
+    display: block;
+}
+
+input, input[type="text"] {
+    width: 100%;
+    padding: 0 15px;
+    height: 48px;
+    line-height: 48px;
+    background: none;
+    border: 1px solid var(--main-gray);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: var(--main-yellow);;;
+
+}
+input:focus {
+    outline: 1px solid var(--main-yellow);;
+}
+option {
+    background-color: var(--main-gray);
+    font-size: 12pt;
+}
+h1, h3, a {
+    color: var(--main-white);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
     font-size: 30pt;
     margin: 0;
     margin-bottom: 15px;
-    color: white;
+    color: var(--main-yellow);
 }
-input {
-   width: 300px;
-   height: 40px;
-   margin-bottom: 15px;
-   background-color: rgb(31, 31, 31);
-   box-shadow: none;
-   padding: 0 10px;
-   border: 1px solid rgb(129, 129, 129);
-   color: yellow;
+h3 {
+    font-size: 12pt;
+    margin: 0;
+    margin-top: 10px;
+}
+
+a {
+    font-size: 13pt;
+    font-style: italic;
+    text-decoration: underline;
+    color: var(--main-yellow);;
+    margin: 0;
+    margin-top: 5px;
+}
+a:hover {
+    color: var(--main-red);
+    font-weight: bold;
 }
 input::placeholder {
-    color: azure;
+    color: var(--main-white);
 }
-input:hover {
-   border: 1px solid yellow;
+.vertical {
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    padding: 0;
 }
-
-button {
-    text-align: center;
-    width: 80px;
-    height: 30px;
-    background-color: yellow;
-    border: none;
-    color: black;
-    font-weight: 600;
-}
-button:hover {
-    background-color: rgb(185, 24, 24);
-}
-
 .btnIn {
     border-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-right: 21px;
- 
+    margin-top: 5px;
 
 }
-h3 {
-    margin: 13px;
-    padding: 0;
+
+button {
+    text-align: center;
+    width: 85px;
+    height: 40px;
+    background-color: var(--main-yellow);
+    border: none;
+    color: black;
+    font-weight: 600;
     font-size: 12pt;
 }
-a {
-    font-style: oblique;
-    text-decoration: underline;
-    color: yellow;
-    font-weight: 600;
-}
-a:hover {
-  color: rgb(185, 24, 24);
+button:hover {
+    background-color: var(--main-red);
+    color: var(--main-white);
 }
