@@ -1,24 +1,38 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+
 body {
     width: 100%;
 }
 
 .main-header {
-    -webkit-box-align: center;
+    position: fixed;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-color: rgb(46, 46, 46);
 } 
-
+.header-box {
+    width: 100%;
+    margin-left: auto;
+    margin-left: auto;
+    padding: 0 50px;
+}
 header {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
-    position: fixed;
     width: 100%;
     top: 0px;
     font-size: 14px;
     padding: 20px 40px;
     z-index: 99;
-    background-color: black;
+
     color: white;
 }
 
@@ -41,7 +55,10 @@ li {
 .logo li {
     font-size: 13pt;
 }
-
+.logins {
+    display: flex;
+    justify-content: flex-end;
+}
 .logins li {
     font-size: 13pt;
 }
