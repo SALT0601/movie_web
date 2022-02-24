@@ -1,8 +1,9 @@
 :root {
     --main-yellow:#ffe600;
+    --main-br-white:#f8f2f2;
     --main-white:#dfdfdf;
     --main-white-gray:#b8b8b8;
     --main-gray:#404043;
-    --main-bg:#1f2022;
+    --main-bg:rgb(20, 20, 20);
     --main-red:#d83215;
 }

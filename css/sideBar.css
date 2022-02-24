@@ -3,19 +3,7 @@
     line-height: 1.5;
     box-sizing: border-box;
 }
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
+
 
 
 body {
@@ -25,17 +13,21 @@ body {
 
 .side-menu {
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 20px;
     display: inline-block;
     width: 100%;
     position: relative;
     border-top: 5px solid var(--main-white) ;
+    background-color: rgb(27, 27, 27);
 }
 
 .search-form {
+    display: flex;
     padding-top: 15px;
     padding-bottom: 15px;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 form {
     display: block;
@@ -47,14 +39,65 @@ form {
     background-color: rgba(209, 208, 207, 0.6);
     width: 230px;
     height: 50px;
+    box-shadow: none;
+    border: none;
+}
+form input::placeholder {
+    color: var(--main-white);
+    font-size: 13pt;
+    padding: 5px;
 }
 main {
     margin-top: 150px;
 }
-
+button {
+    background-color: var(--main-yellow);
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-left: 0;
+}
+button i {
+    color: var(--main-bg);
+    font-size: 32px;
+    
+}
 .co1-4 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: start;
+}
+#categories, .categories-title {
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 8px;
+
+    padding-bottom: 8px;
+    color: var(--main-br-white);
+
+}
+.categories-title {
+    padding-left: 5px;
+}
+#categories ul li {
+    margin-top: 0;
+    padding-bottom: 10px;
+    list-style: none;
+    margin-bottom: 10px;
+    border-bottom: 0.063em solid rgba(82, 95, 129, 0.1);
+} 
+#categories  ul {
+    padding: 0;
+    margin: 0;
+}
+#categories li {
+    display: list-item;
+}
+#categories li a {
+    color: var(--main-white);
+    text-decoration: none;
+    font-size: 15pt;
 }

@@ -1,0 +1,33 @@
+.header-img {
+    background-image: url("../img/bg-img.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black !important;
+    display: block;
+    margin: 0;
+    padding: 150px 0 80px;
+    z-index: 9;
+}
+.header-dark:before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: block !important;
+}
+.container-fluid {
+    padding: 0 100px;
+}
+.text-center {
+    text-align: center;
+}
+.img-title {
+    font-size: 45pt;
+    color: var(--main-br-white);
+}
