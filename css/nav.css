@@ -24,9 +24,7 @@ body {
 }
 header {
     position: fixed;
-    -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
     align-items: center;
     width: 100%;
     top: 0px;
@@ -37,12 +35,12 @@ header {
     color: white;
 }
 
-li {
+.menus li, .logins li {
     display: inline-block;
     list-style: none;
     padding-left: 10px;
 }
-.logo {
+.logo, .menus {
     padding: 0;
     display: flex;
     align-items: center;
@@ -53,8 +51,10 @@ li {
     font-size: 25pt;
     color: yellow;
 }
-.logo li {
+.menus li a{
     font-size: 15pt;
+    text-decoration: none;
+    color: var(--main-white);
 }
 .logins {
     display: flex;
@@ -62,5 +62,9 @@ li {
   
 }
 .logins li {
-    font-size: 13pt;
+    font-size: 15pt;
+}
+.logins li a {
+    text-decoration: none;
+    color: var(--main-white);
 }

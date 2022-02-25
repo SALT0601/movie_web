@@ -22,6 +22,7 @@ body {
 }
 
 .search-form {
+   
     display: flex;
     padding-top: 15px;
     padding-bottom: 15px;
