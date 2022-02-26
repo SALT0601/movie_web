@@ -12,8 +12,7 @@
     margin-bottom: 20px;
 }
 .content-img img {
-    width: 1920;
-    height: 1080;
+    width: 100%;
 }
 .content-title a {
     font-size: 40pt;

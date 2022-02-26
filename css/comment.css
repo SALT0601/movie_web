@@ -1,0 +1,64 @@
+.comments-area, .comment-respond {
+    margin-top: 45px;
+    clear: both;
+}
+.comment-respond .comment-reply-title {
+    position: relative;
+    padding-bottom: 0px;
+}
+.comment-reply-title {
+    font-size: 10pt;
+}
+small {
+    font-size: 14px;
+}
+small a {
+    text-decoration: none;
+}
+
+.comment-form {
+    display: block;
+    margin-top: 0;
+}
+.comment-respond .comment-form-comment {
+    margin: 30px 0;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+}
+.comment-respond textarea {
+    float: inherit;
+}
+textarea {
+    padding: 0 15px;
+    height: 150px;
+    width: 100%;
+    border-radius: 0px;
+    line-height: 48px;
+    background: var(--iq-body-bg);
+    border: 1px solid #404043;
+    color: var(--iq-body-text);
+}
+
+.comment-respond .form-submit {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.form-submit button {
+    background: var(--iq-primary-hover);
+    color: var(--iq-white-color);
+    border: none;
+    position: relative;
+    z-index: 9;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 10px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; 
+}

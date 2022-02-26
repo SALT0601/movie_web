@@ -28,6 +28,7 @@
     text-align: center;
 }
 .img-title {
-    font-size: 45pt;
+    margin: 0;
+    font-size: 40pt;
     color: var(--main-br-white);
 }
