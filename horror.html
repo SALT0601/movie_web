@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap-grid.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/sideBar.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/movieHeader.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>The Movies-Horror</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-box">
+            <div class="row">
+                <div class="logo  col-4">
+                    <h3>The Movies</h3>
+                </div>
+                <div class="menus col-4">
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./movie.html">Movies</a>
+                        </li>
+                        <li>
+                            <a href="./tvShows.html">TV Shows</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="logins col-4">
+                    <ul>
+                        <li>
+                            <a class="logIn" href="./signIn.html">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="logIn" href="./signUp.html">Sign Up</a>
+                        </li>
+                        <li>
+                            <a id="logOut" class="hidden" href="./signIn.html">Log Out</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- header img -->
+    <div class="header-img header-dark">
+        <div class="container-fluid">
+            <div class="row img-content">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h1 class="img-title">Horror</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="site-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="side-bar">
+                        <div id="search" class="side-menu">
+                            <form class="search-form">
+                                <input type="search" class="search-input" placeholder="Search Title" value>
+                                <button type="submit">
+                                    <i class="fas fa-search fa-lg"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div id="categories" class="side-menu">
+                            <h1 class="categories-title">Categories</h1>
+                            <ul>
+                                <li>
+                                    <a href="./movie.html">Action</a>
+                                </li>
+                                <li>
+                                    <a href="./anime.html">Animation</a>
+                                </li>
+                                <li>
+                                    <a href="./drama.html">Drama</a>
+                                </li>
+                                <li>
+                                    <a href="./horror.html">Horror</a>
+                                </li>
+                                <li>
+                                    <a href="./mystery.html">Mystery</a>
+                                </li>
+                                <li>
+                                    <a href="./romance.html">Romance</a>
+                                </li>
+                                <li>
+                                    <a href="./sf.html">SF</a>
+                                </li>
+                                <li>
+                                    <a href="./thriller.html">Thriller</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+
+                    <article>
+                        <div class="content-box">
+                            <div class="content-img">
+                                <img
+                                    src="data:image/jpeg;base64,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">
+                            </div>
+                            <div class="content-detail">
+                                <div class="content-title">
+                                    <a href="./movieDetail.html">유전</a>
+                                </div>
+                                <div class=" content-content">
+                                    <p>
+                                        미니어처 조형사[4] 일을 하는 애니 그레이엄, 정신과 의사인 남편 스티브, 장남인 피터와 차녀 찰리. 영화는 그레이엄 가족이 애니의
+                                        어머니인
+                                        엘렌의 장례식을 치르는 것으로부터 시작된다. 애니는 조사를 읽을 때 장례식에 자신도 가족들도 알지 못하는 사람들이 많이 참석한 것에 대해
+                                        의아함을 느끼는 것으로 서론을 연다. 그리고 조사의 본문은 어머니는 항상 비밀이 많고 이상한 집단과 어울린다는 내용이었고, 앉아서 그것을
+                                        지켜보던 찰리는 슬퍼하기는커녕 기분 나쁘게 웃고 있는 남자를 보는 등 가족은 어딘지 모르게 기이한 장례식을 치른다. 그 와중에 찰리도 틱
+                                        장애가
+                                        있는 모양인지, 혀를 튕기면서 "똑"하고 소리를 내며 산만한 분위기를 낸다.[5]
+                                    </p>
+                                </div>
+                                <div class="content-button">
+                                    <a href="./movieDetail.html" class="btn-link">
+                                        READ MORE
+                                    </a>
+                                </div>
+                                <ul class="content-cate">
+                                    <li class="cate-title">
+                                        <i class="fas fa-film"></i>
+                                        Categoties :
+                                    </li>
+                                    <li>
+                                        <a href="./horror.html">horror</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/logIn.js"></script>
+</body>
+
+</html>
