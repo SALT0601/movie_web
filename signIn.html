@@ -49,7 +49,7 @@
                                     Please Enter Password
                                 </div>
 
-                                <div class="btnIn col-12">
+                                <div id="btnIn" class="btnIn col-12">
                                     <button type="button" onClick="btnLogEvt()">SIGN IN</button>
                                 </div>
                             </div>
@@ -67,6 +67,16 @@
     </div>
     <script type="text/javascript" src="./js/logIn.js">
 
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnIn button').mouseenter(function () {
+                $(this).addClass('hover');
+            }).mouseleave(function () {
+                $(this).removeClass('hover');
+            });
+        });
     </script>
 </body>
 

@@ -15,6 +15,9 @@ body {
     position: relative;
 }
 
+.hidden {
+    display: none;
+}
 
 
 #container {
@@ -157,4 +160,11 @@ button {
 button:hover {
     background-color: var(--main-red);
     color: var(--main-white);
+}
+
+.em-alert1, .em-alert2, .pw-alert1, .pw-alert2,.pw-alert3,
+.us-alert,.fn-alert,.ln-alert, .y-alert, .m-alert,.d-alert{
+    font-size: 10pt;
+    padding: 0 18px;
+    color: var(--main-red);
 }

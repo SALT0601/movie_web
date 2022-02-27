@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
@@ -17,6 +20,7 @@
     <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/movieHeader.css">
     <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/comment.css">
     <title>Document</title>
 </head>
 
@@ -30,10 +34,10 @@
                 <div class="menus col-4">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="./index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">Movies</a>
+                            <a href="./movie.html">Movies</a>
                         </li>
                         <li>
                             <a href="#">TV Shows</a>
@@ -45,20 +49,15 @@
                 <div class="logins col-4">
                     <ul>
                         <li>
-                            <a class="hidden" href="./signIn.html">Sign In</a>
+                            <a href="./signIn.html">Sign In</a>
                         </li>
                         <li>
-                            <a class="hidden" s href="./signUp.html">Sign Up</a>
+                            <a href="./signUp.html">Sign Up</a>
                         </li>
                         <li>
                             <a id="logOut" class="hidden" href="./signIn.html">Log Out</a>
                         </li>
-                        <li>
-                            <a href="./signIn.html">Log Out</a>
-                        </li>
-                        <li>
-                            <a href="./signIn.html">Log Out</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -74,10 +73,10 @@
                         <h1 class="img-title">Iron Man</h1>
                         <ol class="header-cate">
                             <li class="header-cate-item">
-                                <a>Home</a>
+                                <a href="./index.html">Home</a>
                             </li>
                             <li class="header-cate-item">
-                                <a>Movies</a>
+                                <a href="./movie.html">Movies</a>
                             </li>
                             <li class="header-cate-item">
 
@@ -257,30 +256,30 @@
                                     </div>
 
                                 </div>
-                                <div class="comments-area">
-                                    <div class="comment-respond">
-                                        <h3 class="comment-reply-title">
-                                            Leave a Reply
-                                            <small>
-                                                <a>Cancel reply</a>
-                                            </small>
-                                        </h3>
-                                        <form action="#" method="post" class="comment-form" novalidate>
-                                            <div class="comment-form-comment">
-                                                <textarea name="comment" aria-required="true" placeholder="Comment">
 
-                                                </textarea>
-                                            </div>
-                                            <p class="form-submit">
-                                                <button name="submit" type="submit" id="submit" class="submit"
-                                                    value="Post Comment">
-                                                    <span class="btn-text-holder">Post Comment</span>
-                                                </button>
-                                                <input type="hidden" </p>
+                            </div>
+                            <div class="comments-area validate-form">
+                                <div class="comment-respond">
+                                    <h3 class="comment-reply-title">Leave a Comment
+                                        <small>
+                                            <a href="" style="display:none;">Cancel reply
+                                            </a>
+                                        </small>
+                                    </h3>
+                                    <ul id="comment-list"></ul>
+                                    <form id="comment-forms" class="comment-form">
+                                        <div class="comment-form-comment"><textarea name="comment" aria-required="true"
+                                                placeholder="Comment"></textarea></div>
 
-                                        </form>
-                                    </div>
+                                        <p class="form-submit col-12">
+                                            <button type="submit">
+                                                Post Comment
+                                            </button>
+
+                                        </p>
+                                    </form>
                                 </div>
+
                             </div>
 
 
@@ -300,6 +299,7 @@
     </main>
     <script src=" https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     <script src="./js/logIn.js"></script>
+    <script src="./js/comment.js"></script>
 </body>
 
 </html>

@@ -116,6 +116,10 @@ a:hover {
     color: var(--main-red);
     font-weight: bold;
 }
+button.hover {
+    background-color: var(--main-red);
+    color: var(--main-white);
+}
 input::placeholder {
     color: var(--main-white);
 }
@@ -145,10 +149,7 @@ button {
     font-weight: 600;
     font-size: 12pt;
 }
-button:hover {
-    background-color: var(--main-red);
-    color: var(--main-white);
-}
+
 .form-control {
     background-color: var(--main-gray);
 }

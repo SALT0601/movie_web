@@ -1,13 +1,31 @@
+.content-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 0 0 0.063em 0;
+    border-image-source: linear-gradient(to right, rgba(209, 208, 207, 0.6), rgba(209, 208, 207, 0.3), rgba(209, 208, 207, 0));
+}
+
+.comments-area {
+    border-image-slice: 1;
+    border-width: 0 0 0.063em 0;
+    border-top: 1px solid ;
+    border-image-source: linear-gradient(to right, rgba(209, 208, 207, 0.6), rgba(209, 208, 207, 0.3), rgba(209, 208, 207, 0));
+}
 .comments-area, .comment-respond {
     margin-top: 45px;
     clear: both;
 }
-.comment-respond .comment-reply-title {
+.comments-area .comments-title, .comment-respond .comment-reply-title {
     position: relative;
     padding-bottom: 0px;
 }
 .comment-reply-title {
-    font-size: 10pt;
+    font-size: 20pt;
+    margin-bottom: 60px;
 }
 small {
     font-size: 14px;
@@ -15,10 +33,15 @@ small {
 small a {
     text-decoration: none;
 }
+form {
+    display: block;
+    margin-top: 0em;
+}
 
 .comment-form {
     display: block;
     margin-top: 0;
+    margin: 0 5px;
 }
 .comment-respond .comment-form-comment {
     margin: 30px 0;
@@ -26,10 +49,22 @@ small a {
     display: inline-block;
     width: 100%;
 }
-.comment-respond textarea {
+.comment-respond textarea, .comment-respond input{
     float: inherit;
 }
+.comment-respond input {
+    width: 100%;
+    padding: 0 15px;
+    height: 48px;
+    line-height: 48px;
+    background: var(--iq-body-bg);
+    border: 1px solid #404043;
+    border-radius: 0;
+    color: var(--iq-body-text);
+   
+}
 textarea {
+    
     padding: 0 15px;
     height: 150px;
     width: 100%;
@@ -37,22 +72,36 @@ textarea {
     line-height: 48px;
     background: var(--iq-body-bg);
     border: 1px solid #404043;
-    color: var(--iq-body-text);
+    color: var(--main-br-white);
 }
+textarea:focus {
+    border: 1px solid var(--main-yellow);
+    outline: none;
+}
+
 
 .comment-respond .form-submit {
     display: inline-block;
     margin-bottom: 0;
+    
 }
-
+p {
+    margin-top: 0;
+    
+   
+}
+.form-submit {
+    padding: 0;
+}
 .form-submit button {
-    background: var(--iq-primary-hover);
-    color: var(--iq-white-color);
+    width: 150px;
+    background: var(--main-yellow);
+    color: var(--main-gray);
     border: none;
     position: relative;
     z-index: 9;
     display: inline-block;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -61,4 +110,39 @@ textarea {
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: 1.5px; 
+}
+li{
+    list-style: none;
+    
+}
+#comment-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#comment-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-image-slice: 1;
+    border-width: 0 0 0.063em 0;
+    border-top: 1px solid ;
+    border-image-source: linear-gradient(to right, rgba(209, 208, 207, 0.6), rgba(209, 208, 207, 0.3), rgba(209, 208, 207, 0));
+}
+#comment-list li span {
+    padding-right: 200px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+#comment-list li button {
+   background: none !important;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.opacity {
+    background-color: none;
 }

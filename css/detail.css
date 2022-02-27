@@ -12,7 +12,11 @@ body {
     display: inline-block;
     width: 100%;
     margin-bottom: 30px;
-    border-bottom: 0.1px solid;   
+    border-image-slice: 1;
+    border-width: 0 0 0.063em 0;
+    border-bottom: 1px solid ;
+    border-image-source: linear-gradient(to right, rgba(209, 208, 207, 0.6), rgba(209, 208, 207, 0.3), rgba(209, 208, 207, 0));
+    
 }
 .content-img img {
     width: 100%;

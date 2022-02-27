@@ -2,7 +2,10 @@
     position: relative;
     margin-bottom: 3.125em;
     padding-bottom: 2.5em;
-    border-bottom: 0.1px solid;   
+    border-image-slice: 1;
+    border-width: 0 0 0.063em 0;
+    border-bottom: 1px solid ;
+    border-image-source: linear-gradient(to right, rgba(209, 208, 207, 0.6), rgba(209, 208, 207, 0.3), rgba(209, 208, 207, 0));
 }
 .content-box .content-img{
     position: relative;
